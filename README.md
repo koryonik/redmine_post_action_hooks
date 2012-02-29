@@ -1,6 +1,6 @@
 # Redmine Post-Action Hooks
 
-Sends a HTTP POST request with information about some action to a URL of your choise
+Sends a HTTP POST request with information about some action to a URL of your choice
 
 ## Installation
 
