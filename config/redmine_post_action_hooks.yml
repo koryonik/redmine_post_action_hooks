@@ -1,5 +1,7 @@
 production:
-  url: 
+  url:                    # http://your-domain.tld/request/uri
+  ssl_verify_none: false  # true to disable SSL verification
 
 development:
-  url: 
+  url:                    # http://your-domain.tld/request/uri
+  ssl_verify_none: false  # true to disable SSL verification
