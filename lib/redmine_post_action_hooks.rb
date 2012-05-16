@@ -57,7 +57,7 @@ class RedminePostActionHooks < Redmine::Hook::Listener
         end
 
         post = Net::HTTP::Post.new(uri.request_uri)
-        post.set_form_data({ "payload" => context.to_json })
+        post.set_form_data({ "payload" => context.to_json(:root => false) })
 
         res = http.request(post)
         RAILS_DEFAULT_LOGGER.warn "Plugin redmine_post_action_hooks: Failed to dispath information, server returned status #{res.code}: #{res.msg}" unless res === Net::HTTPSuccess

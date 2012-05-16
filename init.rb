@@ -2,6 +2,7 @@
 require 'redmine'
 require_dependency 'redmine_post_action_hooks'
 
+RAILS_DEFAULT_LOGGER = Rails.logger unless defined? RAILS_DEFAULT_LOGGER
 RAILS_DEFAULT_LOGGER.info 'Starting Redmine Post-Action Hooks'
 
 Redmine::Plugin.register :redmine_post_action_hooks do
